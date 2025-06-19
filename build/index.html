@@ -103,8 +103,30 @@
                 <input type="text" id="subject" name="subject" minlength="2" maxlength="100" placeholder="subject" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-950 outline-none dark:border-none">
                 <label for="message" class="text-gray-100 font-bold">Message:</label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-950 outline-none dark:border-none"></textarea>
+                <div class="w-full flex items-center justify-center">
+                    <button class="bg-teal-700 hover:bg-teal-800 active:bg-teal-900 text-white text-2xl px-5 py-3 font-bold rounded-xl border-none">Submit</button>
+                </div>
             </form>
         </section>
     </main>
+
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>Acme Rockets Powered Products, Inc</h2> 555 Astro Way <br> Kentucky, New Jersey 453-563 <br>
+                Email: <a href="mailto:inquiry@acmerockets.com">inquiry@acmerockets.com</a> <br>
+                phone: <a href="tel:+1623517371375">+1623517371375</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+                <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                <a href="#contacts" class="hover:opacity-90">Contacts</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; <span id="year"></span></p>
+                <p class="text-right">All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
